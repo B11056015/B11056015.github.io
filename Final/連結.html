@@ -8,6 +8,50 @@
     <title>連結</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .menu {
+            background-color: rgb(170, 186, 255);
+            text-align: center;
+            position: relative;
+        }
+        
+        .menu li {
+            display: inline-block;
+        }
+        
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 6px 25px;
+        }
+        
+        .menu li:hover {
+            background-color: #fa0;
+        }
+        
+        .subMenu {
+            background-color: rgba(170, 186, 255, 0.884);
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .subMenu li {
+            display: inline-block;
+        }
+        
+        li:hover .subMenu {
+            height: auto;
+        }
+        
         body {
             background: rgb(230, 199, 142);
             font-size: 25px;
@@ -80,16 +124,17 @@
         <div class="row">
             <header>
                 <div class=" col-12 col-md-12 col=lg-12 ">
+                    <div class="menu">
+                        <ui class=" list-inline ">
+                            <li class="list-inline-item "><a href="https://b11056015.github.io/Final/index.html">首頁</a></li>
+                            <li class="list-inline-item "><a href="https://b11056015.github.io/Final/%E8%B2%93%E5%92%AA%E4%BB%8B%E7%B4%B9.html">貓咪介紹</a></li>
+                            <li class="list-inline-item "><a href="https://b11056015.github.io/Final/%E9%80%A3%E7%B5%90.html">連結</a></li>
 
-                    <ui class=" list-inline ">
-                        <li class="list-inline-item "><a href="https://b11056015.github.io/Final/index.html">首頁</a></li>
-                        <li class="list-inline-item "><a href="https://b11056015.github.io/Final/%E8%B2%93%E5%92%AA%E4%BB%8B%E7%B4%B9.html">貓咪介紹</a></li>
-                        <li class="list-inline-item "><a href="https://b11056015.github.io/Final/%E9%80%A3%E7%B5%90.html">連結</a></li>
-
-                        <div class="item ">
-                            <img src="https://i.pinimg.com/originals/d0/e9/d6/d0e9d6b966b8229f7b57470df78fe121.png" class="w-100">
-                        </div>
-
+                            <div class="item ">
+                                <img src="https://i.pinimg.com/originals/d0/e9/d6/d0e9d6b966b8229f7b57470df78fe121.png" class="w-100">
+                            </div>
+                        </ui>
+                    </div>
             </header>
             <article element class="center ">
                 <div class="col-12 col-md-12 col=lg-12 ">
